@@ -1,8 +1,10 @@
 input.onButtonPressed(Button.A, function () {
     basic.showString("" + convertToText(input.temperature()) + "°C")
+    basic.showString("" + convertToText(input.temperature() * (9 / 5) + 32) + "°F")
 })
 input.onButtonPressed(Button.B, function () {
     basic.showString("" + convertToText(Math.round(TempC)) + "°C")
+    basic.showString("" + convertToText(Math.round(TempC * (9 / 5) + 32)) + "°F")
 })
 let TempK = 0
 let Vout = 0
